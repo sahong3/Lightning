@@ -1,7 +1,8 @@
+
 void setup()
 {
   size(300,300);
-  background(0,0,0);
+  background(0,0,0,10);
 
 }
 void draw()
@@ -17,8 +18,15 @@ void draw()
  stroke(255,255,0);
  
  if (keyPressed){
-    clear();
+   noStroke();
+   fill(0);
+   rect(0,0,300,300);
+   ellipse(150,50,100,50);
+   ellipse(170,70,100,50);
+   ellipse(120,80,100,50);
+   ellipse(120,80,100,50);
   }
+
 }
  
 void mousePressed()
